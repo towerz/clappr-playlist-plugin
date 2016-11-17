@@ -6,7 +6,7 @@ export default class PlaylistPlugin extends CorePlugin {
 
   get options() { return this.core.options.playlist || (this.core.options.playlist = {}) }
 
-  get items() { this.options.sources }
+  get items() { return this.options.sources }
 
   get currentItem() { return this.items[this.currentIndex] }
 
